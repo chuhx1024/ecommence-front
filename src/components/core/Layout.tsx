@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const Layout = () => {
+interface Props {
+    children: React.ReactNode
+}
+
+const Layout: FC<Props> = ({children}) => {
   return (
-    <div>Layout</div>
+    <div>layout{children}</div>
   )
 }
 
