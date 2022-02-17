@@ -151,15 +151,12 @@ if (process.env.NODE_ENV === "development") {
 
 #### 3.3 安装 chrome 扩展
 
-<img src="./images/3.png" align="left"/>
 
 React Developer Tools：检查React组件层次结构，在页面上显示React组件。
 
-<img src="./images/4.jpg" align="left"/>
 
 Redux DevTools：监测 Store 中状态的变化
 
-<img src="./images/5.jpg" align="left"/>
 
 ```react
 import { composeWithDevTools } from "redux-devtools-extension"
@@ -173,4 +170,22 @@ export const store = createStore(
 ```html
 
 ```
+
+
+#### 3.4 安装 vscode 拓展
+ES7+ React/Redux/React-Native snippets v4.3.2
+
+#### 3.5 快捷键
+- 生成组件 rafce
+```
+import React from 'react'
+
+const $1 = () => {
+  return <div>$0</div>
+}
+
+export default $1
+```
+
+
 
