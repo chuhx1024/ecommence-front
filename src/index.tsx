@@ -6,6 +6,7 @@ import App from './App';
 import { API } from './config';
 // import store, {history} from './store/index'
 import store from './store/index'
+import './style.css'
 
 console.log(API)
 
