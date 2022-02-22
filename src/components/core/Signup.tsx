@@ -1,10 +1,11 @@
 import React from 'react'
+
 import Layout from './Layout'
 import { Form, Input, Button } from 'antd'
-const Signin = () => {
+const Signup = () => {
   return (
     <Layout
-        title="登录"
+        title="注册"
         subTitle=""
     >
         <Form
@@ -14,6 +15,14 @@ const Signin = () => {
         initialValues={{ remember: true }}
         autoComplete="off"
         >
+            <Form.Item
+                label="昵称"
+                name="username"
+                rules={[{ required: true, message: 'Please input your username!' }]}
+            >
+                <Input />
+            </Form.Item>
+
             <Form.Item
                 label="密码"
                 name="password"
@@ -33,7 +42,7 @@ const Signin = () => {
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                 <Button type="primary" htmlType="submit">
-                    登录
+                    注册
                 </Button>
             </Form.Item>
         </Form>
@@ -41,4 +50,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Signup

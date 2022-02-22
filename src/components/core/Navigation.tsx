@@ -25,6 +25,12 @@ class Navigation extends React.Component {
                 <Menu.Item  key="shop">
                     <Link to="/shop">商城</Link>
                 </Menu.Item>
+                <Menu.Item  key="signin">
+                    <Link to="/signin">登录</Link>
+                </Menu.Item>
+                <Menu.Item  key="signup">
+                    <Link to="/signup">注册</Link>
+                </Menu.Item>
             </Menu>
         )
     }
